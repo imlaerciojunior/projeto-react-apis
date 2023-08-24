@@ -46,3 +46,18 @@
 ;
   
 }
+
+.botao_headerPokedex {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  /* text-decoration-line: underline; */
+  background-color: inherit;
+  border: none;
+  bottom: 50px;
+  cursor: pointer;
+  
+}

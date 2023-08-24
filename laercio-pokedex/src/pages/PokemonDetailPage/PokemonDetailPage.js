@@ -25,6 +25,7 @@ import { getTypes } from "../../functions/ReturnPokemonsTypes";
 import { ApiContext } from "../../context/useApiContext";
 import HeaderPokemonDetail from "../../components/Header/HeaderPokemonDetail";
 import { getColors } from "../../functions/ReturnCardColors";
+import { ModalPokemon } from "../../modal/ModalPokemon";
 
 const PokemonDetailPage = () => {
   const { id } = useParams();
@@ -50,7 +51,7 @@ const PokemonDetailPage = () => {
 
   return (
     <>
-      <HeaderPokemonDetail/>
+      <HeaderPokemonDetail excluirPokemon = {name}/>
       <Title>Detalhes</Title>
       <Container>
       
@@ -109,6 +110,7 @@ const PokemonDetailPage = () => {
         </DetailsContainer>
         <PokeballDetail src={pokeball} alt="" />
       </Container>
+      <ModalPokemon/>
     </>
   );
 };

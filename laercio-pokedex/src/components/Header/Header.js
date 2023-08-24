@@ -14,7 +14,7 @@ const Header = () => {
         </div>        
       </div>
       <div className="div_button">
-          <button onClick={()=>goToPokedex(navigate)} className="button_header">Pokédex</button>
+          <button onClick={()=>goToPokedex(navigate)} className="button_header" >Pokédex</button>
       </div>
     </div>
   );

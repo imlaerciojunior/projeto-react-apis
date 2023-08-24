@@ -48,8 +48,8 @@ export const FrontBackImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   border-radius: 0.5rem;
   border: 2px solid #fff;
   background-color: #ffffff;
@@ -105,12 +105,15 @@ export const MovesFont = styled.div`
 `;
 
 export const ButtonMoves = styled.button`
+  margin-top: 20px;
+  margin-left: -60px;
   border-radius: 12px;
-  border: none;
-  width: 102px;
+  width: 200px;
   height: 37px;
+  font-size: normal;
   border: 1px;
   text-transform: capitalize;
+  
   &:hover {
     background-color: lightgrey;
   }
@@ -118,10 +121,10 @@ export const ButtonMoves = styled.button`
 
 export const ImageDetail = styled.img`
   position: absolute;
-  width: 270px;
-  height: 270px;
+  width: 290px;
+  height: 290px;
   top: 216px;
-  left: 1080px;
+  left: 1050px;
   z-index: 2;
 `;
 
@@ -176,8 +179,8 @@ export const StatBar = styled.div`
 
 export const PokeballDetail = styled.img`
   position: absolute;
-  top: -25px;
-  right: -25px;
+  top: -13px;
+  right: -30px;
   width: 500px;
   height: 500px;
   flex-shrink: 0;

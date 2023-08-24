@@ -14,7 +14,6 @@ import {
   TypesContainer,
 } from "./PokemonCardStyled";
 import { getTypes } from "../../functions/ReturnPokemonsTypes";
-// import { ApiContext } from "../../contexts/useApiContext";
 import { PokemonCardContext } from "../../context/PokemonCardContext";
 import { useNavigate } from "react-router-dom";
 
