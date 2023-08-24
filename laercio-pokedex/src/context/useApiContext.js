@@ -11,7 +11,7 @@ const ApiProvider = ({ children }) => {
   const getPokemons = async () => {
     try {
       const endPoints = [];
-      for (let i = 387; i <= 494; i++) {
+      for (let i = 152; i <= 251; i++) {
         endPoints.push(axios.get(`${BASE_URL}/${i}`));
       }
       const response = await axios.all(endPoints);

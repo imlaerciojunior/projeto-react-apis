@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import "../../pages/PokedexPage/PokedexStyled.css";
-import PokemonCard from "../../components/PokemonCard/PokemonCard";
 import { getColors } from "../../functions/ReturnCardColors";
 import { PokemonCardContext } from "../../context/PokemonCardContext";
 import { ApiContext } from "../../context/useApiContext";
 import HeaderPokedex from "../../components/Header/HeaderPokedex";
 import { Card, Title } from "../PokemonsListPage/PokemonsListPageStyled";
+import PokemonCardPokedex from "../../components/PokemonCard/PokemonCardPokedex";
+import { ModalPokemon } from "../../modal/ModalPokemon";
 
 const PokedexPage = () => {
   const { pokemons } = useContext(ApiContext);
@@ -22,7 +23,7 @@ const PokedexPage = () => {
       </Title>
       <Card>
         {pokemonCart.map((capturedPokemon) => (
-          <PokemonCard
+          <PokemonCardPokedex
             cardColor={getColors(capturedPokemon.pokemon.types[0])}
             pokemon={capturedPokemon.pokemon}
             id={capturedPokemon.pokemon.id}
@@ -35,6 +36,7 @@ const PokedexPage = () => {
           />
         ))}
       </Card>
+      <ModalPokemon/>
     </>
   );
 };

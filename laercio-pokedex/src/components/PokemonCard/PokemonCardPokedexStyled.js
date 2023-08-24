@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ContainerPokedex = styled.div`
   font-family: "Poppins", sans-serif;
   padding: 10px;
   height: 210px;
@@ -14,33 +14,34 @@ export const Container = styled.div`
 
 `;
 
-export const PokemonNumber = styled.p`
+export const PokemonNumberPokedex = styled.p`
   margin-bottom: 2px;
   font-size: 16px;
   font-weight: 600;
   text-align: left;
   `;
 
-export const PokemonName = styled.h1`
+export const PokemonNamePokedex = styled.h1`
   margin-bottom: 2px;
   margin-top: 2px;
   font-size: 32px;
   font-weight: 700;
+  /* letter-spacing: 0em; */
   text-align: left;
+  /* margin-bottom: px; */
   text-transform: capitalize;
 `;
 
-export const TypesContainer = styled.div`
-  margin-bottom: 60px;
+export const TypesContainerPokedex = styled.div`
+  margin-bottom: 40px;
   margin-top: 2px;
-  margin-left: 10px;
   display: flex;
-  padding: 3px;
+  padding: 10px;
   justify-content: center;
   align-items: flex-start;
 `;
 
-export const PokemonType = styled.img`
+export const PokemonTypePokedex = styled.img`
   max-width: 100px;
   height: 32px;
   border-radius: 8px;
@@ -50,7 +51,7 @@ export const PokemonType = styled.img`
   margin-left: -1.44rem;
 `;
 
-export const Types = styled.div`
+export const TypesPokedex = styled.div`
   display: flex;
   padding: 0.3125rem 0.5rem;
   align-items: flex-start;
@@ -58,7 +59,7 @@ export const Types = styled.div`
   gap: 1.5rem;
 `;
 
-export const Pokeball = styled.img`
+export const PokeballPokedex = styled.img`
   position: absolute;
   top: -25px;
   right: -25px;
@@ -67,7 +68,7 @@ export const Pokeball = styled.img`
   flex-shrink: 0;
 `;
 
-export const DetailsButton = styled.button`
+export const DetailsButtonPokedex = styled.button`
   cursor: pointer;
   color: #fff;
   font-size: 15px;
@@ -78,22 +79,23 @@ export const DetailsButton = styled.button`
   border: none;
   position: relative;
   bottom: 10px;
-    
+  
 `;
 
 
-export const Pokemon = styled.img`
+export const PokemonPokedex = styled.img`
   width: 193px;
   height: 193px;
   position: absolute;
   top: -50px;
-  right: -30px;
+  right: 0;
   z-index: 2;
 `;
 
-export const CatchButton = styled.button`
-  
-  font-weight: bold;
+export const ExcluirButton = styled.button`
+  /* font-style: italic; */
+  font-size: large;
+  /* font-weight: bold; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -101,7 +103,7 @@ export const CatchButton = styled.button`
   padding: 4px 10px;
   width: 146px;
   height: 38px;
-  background: #ffffff;
+  background: #FF6262;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -109,16 +111,9 @@ export const CatchButton = styled.button`
   bottom: 10px;
   right: 22px;
   z-index: 2;
-  color: #000;
+  color: #FFF;
   &:hover {
     background-color: lightgray;
     transition: ease-out 0.4s;
   }
 `;
-
-
-
-
-
-
-
