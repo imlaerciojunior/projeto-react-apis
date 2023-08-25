@@ -97,7 +97,7 @@ const PokemonDetailPage = () => {
               <MovesFont>Moves:
               <div>
                 {moves
-                  .filter((move, id) => id < 4)
+                  .filter((move, id) => id < 5)
                   .map((item, id) => (
                     <ul>
                     <ButtonMoves key={id}>{item.move.name}</ButtonMoves>

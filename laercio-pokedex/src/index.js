@@ -6,11 +6,13 @@ import PokemonCardProvider from "./context/PokemonCardContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <PokemonCardProvider>
-    <ApiProvider>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </ApiProvider>
-  </PokemonCardProvider>
+  
+    <PokemonCardProvider>
+      <ApiProvider> 
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ApiProvider>
+    </PokemonCardProvider>
+  
 );
