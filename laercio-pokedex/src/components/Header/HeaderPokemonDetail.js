@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../Header/HeaderPokemonDetailStyled.css";
 import image1 from "../../assets/logo.png";
-import { goToHome, goToPokedex } from "../../routes/coordenator";
+import { goToHome } from "../../routes/coordenator";
 import { useNavigate } from "react-router-dom";
 import { PokemonCardContext } from "../../context/PokemonCardContext";
 import { IoChevronBackSharp } from "react-icons/io5";
@@ -31,11 +31,11 @@ const HeaderPokemonDetail = ({ excluirPokemon }) => {
       </div>
       <div className="div_botao">
         <button
-          onClick={() => goToPokedex(navigate)}
+          onClick={() => goToHome(navigate)}
           className="botao_headerPokedex"
         >
           <IoChevronBackSharp />
-          Pokédex
+          Todos Pokémons
         </button>
       </div>
     </div>
